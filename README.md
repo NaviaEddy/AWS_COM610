@@ -120,7 +120,7 @@ CloudWatch se configura automáticamente para:
 
 ### Base URL
 ```
-https://your-api-gateway-url/prod
+https://iudpys93l1.execute-api.us-east-2.amazonaws.com/prod
 ```
 
 ### Endpoints disponibles
@@ -173,8 +173,6 @@ https://your-api-gateway-url/prod
 ### Variables de entorno
 ```bash
 REACT_APP_API_URL=https://your-api-gateway-url/prod
-DYNAMODB_TABLE_NAME=recipes-table
-AWS_REGION=us-east-1
 ```
 
 ## 📊 Monitoreo y Logs
@@ -205,8 +203,8 @@ Los logs están disponibles en CloudWatch para cada función Lambda:
 
 ## 📝 URL de acceso
 
-- **Frontend**: `https://your-cloudfront-distribution.cloudfront.net`
-- **API**: `https://your-api-gateway-url/prod`
+- **Frontend**: `https://d28nlw2mkjecpy.cloudfront.net`
+- **API**: `https://iudpys93l1.execute-api.us-east-2.amazonaws.com/prod`
 
 ## 🔒 Seguridad
 
