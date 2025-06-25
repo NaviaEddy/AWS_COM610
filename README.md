@@ -8,7 +8,7 @@ Esta API RESTful permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eli
 
 ## 👥 Integrantes del equipo
 
-- **Santillan Jason - CICO** - Desarrollo del backend y configuración de AWS Lambda
+- **Santillan Jason - CICO** - Desarrollo del backend, configuración de AWS Lambda y api gateway
 - **Navia Condori Eddy - CICO** - Desarrollo del frontend, configuración de S3/CloudFront y DynamoDB
 
 ### Funcionalidades de la API
