@@ -1,4 +1,4 @@
-# API de Recetas - Arquitectura Serverless en AWS
+# API de Recetas - Arquitectura AWS
 
 Una aplicación web completa para gestionar recetas utilizando arquitectura serverless con AWS Lambda, API Gateway, DynamoDB y frontend desplegado en S3 con CloudFront.
 
