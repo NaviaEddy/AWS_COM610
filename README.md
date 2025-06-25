@@ -39,12 +39,6 @@ Crear las siguientes funciones Lambda, una por cada operación CRUD:
 - `EditRecipe` - Método PUT
 - `DeleteRecipe` - Método DELETE
 
-#### Variables de entorno para cada función:
-```
-DYNAMODB_TABLE_NAME=recipes-table
-REGION=us-east-1
-```
-
 #### Configuración de permisos IAM:
 Asegurar que cada función Lambda tenga permisos para:
 - Leer/escribir en DynamoDB
