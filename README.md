@@ -6,6 +6,11 @@ Una aplicación web completa para gestionar recetas utilizando arquitectura serv
 
 Esta API RESTful permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre recetas de cocina. El proyecto implementa una arquitectura completamente serverless aprovechando los servicios de AWS para garantizar escalabilidad, disponibilidad y costos optimizados.
 
+## 👥 Integrantes del equipo
+
+- **Santillan Jason - CICO** - Desarrollo del backend y configuración de AWS Lambda
+- **Navia Condori Eddy - CICO** - Desarrollo del frontend, configuración de S3/CloudFront y DynamoDB
+
 ### Funcionalidades de la API
 
 - **Crear Receta** (POST): Agregar nuevas recetas a la base de datos
@@ -16,7 +21,7 @@ Esta API RESTful permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eli
 
 ## 🏗️ Arquitectura Serverless
 
-![AWS drawio](https://github.com/user-attachments/assets/ef0fd156-599f-4bc6-ae6b-e17763e2ee29)
+![Screenshot 2025-06-25 151118](https://github.com/user-attachments/assets/b51b7946-9118-4b1b-85dd-1fa69edb6290)
 
 ### Componentes Principales
 
@@ -176,7 +181,7 @@ AWS_REGION=us-east-1
 ### CloudWatch Logs
 Los logs están disponibles en CloudWatch para cada función Lambda:
 - `/aws/lambda/CreateRecipe`
-- `/aws/lambda/GetRecipe`
+- `/aws/lambda/GetRecipeById`
 - `/aws/lambda/GetRecipes`
 - `/aws/lambda/EditRecipe`
 - `/aws/lambda/DeleteRecipe`
@@ -196,20 +201,6 @@ Los logs están disponibles en CloudWatch para cada función Lambda:
 2. **Timeout en Lambda**: Ajustar timeout y memoria
 3. **CORS issues**: Configurar CORS en API Gateway
 4. **DynamoDB throttling**: Ajustar capacidad de tabla
-
-### Logs útiles
-```bash
-# Ver logs de Lambda
-aws logs tail /aws/lambda/CreateRecipe --follow
-
-# Ver métricas de API Gateway
-aws cloudwatch get-metric-statistics --namespace AWS/ApiGateway
-```
-
-## 👥 Integrantes del equipo
-
-- **Santillan Jason - CICO** - Desarrollo del backend y configuración de AWS Lambda
-- **Navia Condori Eddy - CICO** - Desarrollo del frontend, configuración de S3/CloudFront y DynamoDB
 
 ## 📝 URL de acceso
 
