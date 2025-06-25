@@ -222,5 +222,3 @@ La arquitectura serverless permite:
 - Distribución global via CloudFront
 
 ---
-
-*Este proyecto implementa las mejores prácticas de AWS Well-Architected Framework para seguridad, rendimiento, confiabilidad y optimización de costos.*
