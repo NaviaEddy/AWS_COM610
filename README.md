@@ -199,7 +199,6 @@ Los logs están disponibles en CloudWatch para cada función Lambda:
 1. **Error 403 en S3**: Verificar política de bucket
 2. **Timeout en Lambda**: Ajustar timeout y memoria
 3. **CORS issues**: Configurar CORS en API Gateway
-4. **DynamoDB throttling**: Ajustar capacidad de tabla
 
 ## 📝 URL de acceso
 
