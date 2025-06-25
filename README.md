@@ -72,8 +72,9 @@ Asegurar que cada función Lambda tenga permisos para:
        └── DELETE (DeleteRecipe)
    ```
 3. Integrar cada método con su respectiva función Lambda
-4. Habilitar CORS si es necesario
-5. Desplegar la API y obtener la URL del endpoint
+4. Habilitar CORS
+5. Habilitar Lambda Proxy Integration
+6. Desplegar la API y obtener la URL del endpoint
 
 ### 4. Configuración del Frontend en S3
 
