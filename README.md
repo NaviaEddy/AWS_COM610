@@ -16,6 +16,8 @@ Esta API RESTful permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eli
 
 ## 🏗️ Arquitectura Serverless
 
+![AWS drawio](https://github.com/user-attachments/assets/ef0fd156-599f-4bc6-ae6b-e17763e2ee29)
+
 ### Componentes Principales
 
 - **AWS Lambda**: Funciones serverless para la lógica de backend
@@ -119,33 +121,41 @@ https://your-api-gateway-url/prod
 
 | Método | Endpoint | Descripción |
 |--------|----------|-------------|
-| POST | `/recipes` | Crear nueva receta |
-| GET | `/recipes` | Obtener todas las recetas |
-| GET | `/recipes/{id}` | Obtener receta por ID |
-| PUT | `/recipes/{id}` | Actualizar receta existente |
-| DELETE | `/recipes/{id}` | Eliminar receta |
+| POST | `/recipe` | Crear nueva receta |
+| GET | `/recipe` | Obtener todas las recetas |
+| GET | `/recipe/{id}` | Obtener receta por ID |
+| PUT | `/recipe/{id}` | Actualizar receta existente |
+| DELETE | `/recipe/{id}` | Eliminar receta |
 
 ### Ejemplo de estructura JSON para recetas
 
 ```json
 {
-  "recipeId": "123",
-  "name": "Tacos al Pastor",
-  "description": "Deliciosos tacos mexicanos",
-  "ingredients": [
-    "Carne de cerdo",
-    "Tortillas",
-    "Piña",
-    "Cebolla"
-  ],
-  "instructions": [
-    "Marinar la carne",
-    "Cocinar en trompo",
-    "Servir en tortillas"
-  ],
-  "prepTime": "30 minutos",
-  "cookTime": "45 minutos",
-  "servings": 4
+    "status": "success",
+    "message": "Recipes retrieved successfully",
+    "data": {
+        "recipes": [
+            {
+                "ingredients": [
+                    "Linaza a gusto",
+                    "Azucar",
+                    "Agua caliente"
+                ],
+                "id_recipe": "c7db2f8e-0143-44df-bb84-1d5db2cfaf21",
+                "title": "Chesco de Linaza"
+            },
+            {
+                "ingredients": [
+                    "Pasta editada final",
+                    "Huevos final",
+                    "Tomate final",
+                    "Carne"
+                ],
+                "id_recipe": "5f927a72-cefe-46e6-9f9e-f582dbc5aa5b",
+                "title": "Pasta con tomate"
+            }
+        ]
+    }
 }
 ```
 
